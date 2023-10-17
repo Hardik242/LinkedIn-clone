@@ -60,7 +60,7 @@ a {
   background-repeat: no-repeat;
   background-position: left 16px top 10px;
   background-size: 15px;
-  width: 65%;
+  width: 70%;
   padding: 0px 40px;
   border: none;
   box-sizing: border-box;
@@ -130,10 +130,4 @@ a {
   letter-spacing: -0.4px;
   color: rgb(137, 89, 43);
   text-decoration: underline;
-}
-
-@media screen and (max-width: 1055px) {
-}
-
-@media screen and (max-width: 850px) {
 }
