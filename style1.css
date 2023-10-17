@@ -1,130 +1,139 @@
 /* Stylesheet for navigation bar */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  /* font-family: 'Poppins', sans-serif; */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 a {
-    text-decoration: none;
-    color: rgb(75, 75, 75);
+  text-decoration: none;
+  color: rgb(75, 75, 75);
 }
 
 .navbar {
-    width: 100%;
-    background-color: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-direction: row;
-    position: sticky;
-    top: 0;
-    /* padding: 0px 15px; */
-    margin-bottom: 20px;
+  margin-bottom: 20px;
+  z-index: 100;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
 }
 
-#Searchbar {
-    background-image: url(Img/magnifying-glass.png);
-    background-repeat: no-repeat;
-    background-position: left 13px top 10px;
-    background-size: 13px;
-    padding: 0px 10px 0px 35px;
-    border: none;
-    box-sizing: border-box;
-    background-color: #e0e9ec;
-    border-radius: 2px;
-    height: 34px;
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  min-height: 100%;
+  width: 1128px;
 }
 
 .logo {
-    width: 34px;
-    height: 34px;
-    padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 5px;
+}
+
+.logo a img {
+  width: 35px;
+  height: 35px;
+}
+
+.searchbar {
+  width: 100%;
 }
 
 .nav-left {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
-.nav-left a {
-    padding: 0px 5px;
-    display: flex;
-    align-items: center;
+#Searchbar {
+  background-image: url(Img/magnifying-glass.png);
+  background-repeat: no-repeat;
+  background-position: left 16px top 10px;
+  background-size: 15px;
+  width: 65%;
+  padding: 0px 40px;
+  border: none;
+  box-sizing: border-box;
+  background-color: #e0e9ec;
+  border-radius: 2px;
+  height: 34px;
+}
+
+.nav-left {
+  /* padding: 0px 5px; */
+  display: flex;
+  align-items: center;
 }
 
 .menu-png {
-    width: 22px;
-    height: 22px;
+  width: 22px;
+  height: 22px;
 }
 
 #profile {
-    border-radius: 50%;
+  border-radius: 50%;
 }
 
-
 .nav-right ul {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav-right ul li {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    list-style: none;
-    min-height: 50px;
-    min-width: 80px;
-    padding-top: 2px;
-    border-bottom: 2px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  min-height: 50px;
+  min-width: 80px;
+  border-bottom: 2px solid white;
 }
 
 .nav-right ul li a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
 }
 
-.nav-right ul li a span{
-    color: grey;
+.nav-right ul li a span {
+  color: grey;
 }
 
-.nav-right ul li:hover,.nav-right ul li.active-link {
-    color: black;
-    border-bottom: 2px solid black;
+.nav-right ul li:hover,
+.nav-right ul li.active-link {
+  color: black;
+  border-bottom: 2px solid black;
 }
 
 #business-border {
-    padding: 0px 8px;
-    border-left: 1px solid grey;
+  padding: 0px 8px;
+  border-left: 1px solid grey;
 }
 
-#Premium-link a {
-    max-width: 100px;
-    text-align: center;
-    letter-spacing: -0.4px;
-    color: rgb(137, 89, 43);
-    text-decoration: underline;
-}
-
-#Premium-link a:hover {
-    color: rgb(0, 0, 0);
+#Premium-link a span{
+  max-width: 100px;
+  text-align: center;
+  letter-spacing: -0.4px;
+  color: rgb(137, 89, 43);
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 1055px) {
-    
 }
 
 @media screen and (max-width: 850px) {
-    
 }

@@ -1,15 +1,15 @@
-/* Stylesheet for body content */
+/* Stylesheet for body content :- Left sidebar and Right sidebar */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-    background-color: #f1ecec;
+    background-color: #ede9e9;
     color: rgb(75, 75, 75);
 }
 
@@ -20,34 +20,38 @@ a {
 
 
 .container {
-    padding: 15px 8%;
+    height: 300vh;
+    margin: 0px 170px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    background-color: #f1ecec;
+    justify-content: space-between;
 }
 
+
+/* ------------------Left-Sidebar------------------ */
+
+
 .left-sidebar {
+    max-width: 225px;
     align-items: center;
-    flex-basis: 20%;
-    align-self: flex-start;
+    float: left;
 }
 
 .profile-box {
     background-color: white;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
+    border-radius: 8px;
 }
 
 .profile-box img {
     width: 100%;
-    height: 70px;
+    height: 55px;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
 }
 
 .profile-info {
-    padding: 0 25px;
+    text-align: center;
+    padding: 0 12px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -71,22 +75,24 @@ a {
 .profile-info h2 {
     padding: 5px 0 10px 0;
     font-size: 12px;
-    font-weight: 500;
+    font-weight: 400;
     color: rgb(75, 75, 75);
-    border-bottom: 1px solid grey;
 }
 
 .profile-info ul {
+    border-top: 0.5px solid rgb(186, 186, 186);
+    border-bottom: 0.5px solid rgb(186, 186, 186);
     list-style: none;
-    margin: 20px 0px;
+    padding: 15px 0px;
     width: 100%;
 }
 
 .profile-info ul li {
+    padding-bottom: 5px;
     display: flex;
     flex-direction: row;
     font-size: 12px;
-    font-weight: 500;
+    font-weight: 400;
     justify-content: space-between;
 }
 
@@ -95,26 +101,25 @@ a {
 }
 
 .my-items a {
-    border-top: 1px solid grey;
+
     display: flex;
     flex-direction: row;
     align-items: center;
-    /* width: 100%; */
-    padding: 12px;
+    padding: 10px 5px;
     font-size: 12px;
-    font-weight: 800;
+    font-weight: 600;
 }
 
 .my-items img {
     width: 30px;
-    height: 30px;
+    height: 25px;
 }
 
 .activity {
-    margin: 15px 0;
+    margin: 10px 0;
     background-color: white;
     border-radius: 8px;
-    padding: 10px 25px;
+    padding: 10px 5%;
 }
 
 .activity h2 {
@@ -142,17 +147,23 @@ a {
 
 
 
+/* ----------------Main-Content----------------- */
+
 
 .main-content {
-    flex-basis: 46%;
+    max-width: 555px;
     background-color: white;
 }
 
 
 
+/* -------------right-sidebar------------- */
+
 .right-sidebar {
-    flex-basis: 22%;
-    /* font-size: 12px; */
+    max-width: 300px;
+    /* align-self: flex-end; */
+    float: right;
+    height: 100%;
 }
 
 .linkedin-news {
@@ -182,19 +193,32 @@ a {
     padding: 6px 0;
 }
 
+.news-list ul li h3 {
+    font-size: 14px;
+}
+
 .news-list ul li h4 {
-    padding-left: 13px;
+    font-size: 12px;
+    font-weight: 500;
+    padding-top: 5px;
+    padding-left: 15px;
     color: grey;
 }
 
+/* -----------------Footer------------------ */
+
 .footer {
     color: rgb(112, 112, 112);
-    border-top: 1px solid rgb(158, 158, 158);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    border-top: 1px solid rgb(202, 202, 202);
+    text-align: center;
+    line-height: 22px;
     font-size: 12px;
+
+}
+
+.sticky {
+    position: sticky;
+    top: 65px;
 }
 
 .useful-links {
