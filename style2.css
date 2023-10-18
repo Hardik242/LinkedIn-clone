@@ -396,6 +396,16 @@ a {
 
 }
 
+.user-info img{
+    width: 48px;
+    height: 48px;
+}
+
+.post-img img{
+    max-width: 500px;
+    /* max-height: 300px; */
+}
+
 
 /* -------------right-sidebar------------- */
 
