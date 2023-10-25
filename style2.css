@@ -230,17 +230,20 @@ a {
 
 .post {
     width: 20%;
-    display: flex;
-    justify-content: center;
-    font-size: 20px;
+}
+.post button{
+    font-size: 16px;
     font-weight: 600;
+    width: 100%;
+    border-radius: 40px;
+    height: 48px;
     background-color: #3b59d1;
-    border-radius: 50px;
+    border: none;
+    cursor: pointer;
 }
 
 .post span {
     color: rgb(227, 223, 223);
-
 }
 
 .main-post {
