@@ -10,7 +10,7 @@
 }
 
 body {
-  background-color: #f0f0f0;
+  background-color: #f4f2ee;
   color: rgb(75, 75, 75);
 }
 
@@ -115,7 +115,7 @@ a {
 }
 
 .nav-right ul li a span {
-  color: grey;
+  color: #434343;
 }
 
 .nav-right ul li:hover,
