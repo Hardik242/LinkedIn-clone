@@ -21,6 +21,7 @@ a {
 
 
 .left-sidebar {
+    order: 1;
     min-width: 0;
     max-width: 225px;
     align-items: center;
@@ -158,6 +159,7 @@ a {
 }
 
 .main-content {
+    order: 2;
     min-width: 0;
     max-width: 48%;
     margin: 0 20px;
@@ -345,6 +347,7 @@ a {
 
 
 .right-sidebar {
+    order: 3;
     min-width: 0;
     max-width: 300px;
 }

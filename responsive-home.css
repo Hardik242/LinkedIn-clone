@@ -24,14 +24,17 @@
     }
 
     .left-sidebar {
+        order: 1;
         max-width: 200px;
     }
 
     .right-sidebar {
+        order: 2;
         display: none;
     }
 
     .main-content {
+        order: 3;
         min-width: 0;
         max-width: 525px;
         margin: 0 0 0 20px;
@@ -72,6 +75,16 @@
 
 
 @media only screen and (max-width:810px) {
+    .right-sidebar{
+        min-width: 94%;
+        /* margin: 0 12px; */
+        margin-bottom: 24px;
+        display: unset;
+    }
+    .footer{
+        display: none;
+    }
+
     #Searchbar {
         /* width: 50%; */
         /* background-color: #e0e9ec; */
